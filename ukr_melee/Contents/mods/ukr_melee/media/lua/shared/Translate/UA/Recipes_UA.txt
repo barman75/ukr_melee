@@ -1,0 +1,16 @@
+Recipe_UA = {
+	-- Make Bartka = "Зробити Бартку",
+	Sharp rebar = "Загострити арматуру",
+	Sharp Long pipe = "Загострити довгу трубу",
+	Create pipe staff = "Зробити посох з труби",
+	Fix Bartka = "Полагодити Бартку",
+	Fix Kelep = "Полагодити Келеп",
+	Fix Pirnach = "Полагодити Пірнач",
+	Fix Shablya = "Полагодити Шаблю",
+	Fix Trizub = "Полагодити Тризуб",
+	Fix Sharp Long pipe = "Полагодити Загострену трубу",
+	Fix Sharpened Rebar = "Полагодити Загострену арматуру",
+	Fix Kossacks Knife = "Полагодити Пластунський ніж",
+	Fix Long pipe Staff = "Полагодити посох з труби",
+	Fix Svynokol = "Полагодити Свинокол",
+}

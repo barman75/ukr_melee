@@ -1,0 +1,50 @@
+module Base
+{
+    
+        recipe Sharp rebar
+        {
+	destroy Armatura,
+	keep Saw,
+	Result:ArmaturaSharp,
+        --NearItem:Anvil,
+	Time:200.0,
+        Category:Smithing,
+        Sound:Sawing,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+        
+	}
+
+        recipe Sharp Long pipe
+        {
+	destroy Longpipe,
+	keep Saw,
+	Result:LongpipeSharp,
+        --NearItem:Anvil,
+	Time:200.0,
+        Category:Smithing,
+        Sound:Sawing,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+        recipe Create pipe staff
+        {
+	destroy Longpipe,
+        Glue/Woodglue/HCSuperglue,
+        LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Result:LongpipeStaff,
+	Time:200.0,
+        Category:Smithing,
+        Sound:Hammering,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+}

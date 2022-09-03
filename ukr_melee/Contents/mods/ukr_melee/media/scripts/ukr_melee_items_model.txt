@@ -1,0 +1,232 @@
+module Base
+{
+  imports { Base }
+
+    model UMWSharpenStone
+  {
+	mesh = weapons/UMWSharpenStone,
+	texture = weapons/UMWSharpenStone,
+	scale = 4,
+   }
+  model UMWSharpenStone_ground
+  {
+      mesh = weapons/UMWSharpenStone,
+      texture = weapons/UMWSharpenStone,
+	  scale = 4,
+  }
+
+
+	model Bartka
+  {
+	mesh = weapons/bartka,
+	texture = weapons/bartka,
+	scale = 1,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Kelep
+  {
+	mesh = weapons/kelep,
+	texture = weapons/kelep,
+	scale = 1,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Bulava
+  {
+	mesh = weapons/bulava,
+	texture = weapons/bulava,
+	scale = 1,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Pirnach
+  {
+	mesh = weapons/pirnach,
+	texture = weapons/pirnach,
+	scale = 1,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Shablya
+  {
+	mesh = weapons/shablya,
+	texture = weapons/shablya,
+	scale = 1.3,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Trizub
+  {
+	mesh = weapons/trizub,
+	texture = weapons/trizub,
+	scale = 1,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Longpipe
+  {
+	mesh = weapons/longpipe,
+	texture = weapons/longpipe,
+	scale = 1.3,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+
+	model LongpipeSharp
+  {
+	mesh = weapons/longpipesharp,
+	texture = weapons/longpipe,
+	scale = 1.3,
+
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Armatura
+  {
+	mesh = weapons/armatura,
+	texture = weapons/armatura,
+	scale = 0.7,
+	attachment world
+	{
+	offset = 1.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model ArmaturaSharp
+  {
+	mesh = weapons/armaturasharp,
+	texture = weapons/armatura,
+	scale = 0.7,
+	attachment world
+	{
+	offset = 0.0000 1.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model KossacksKnife
+  {
+	mesh = weapons/kossacksknife,
+	texture = weapons/kossacksknife,
+	scale = 0.7,
+	attachment world
+	{
+	offset = 0.0000 1.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+    model Svynokol
+  {
+	mesh = weapons/svynokol,
+	texture = weapons/svynokol,
+	scale = 0.7,
+	attachment world
+	{
+	offset = 0.0000 1.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+    model LongpipeStaff
+  {
+	mesh = weapons/longpipe,
+	texture = weapons/longpipehandle,
+	scale = 1.3,
+	attachment world
+	{
+	offset = 0.0000 1.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+    model NizhkaStula
+  {
+	mesh = weapons/chairleg,
+	texture = weapons/chairleg,
+	scale = 1,
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+    model NizhkaStola
+  {
+	mesh = weapons/chairleg,
+	texture = weapons/chairleg,
+	scale = 1.3,
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 90.0000 90.0000,
+	}
+   }
+
+	model Berdysh
+  {
+	mesh = weapons/berdysh,
+	texture = weapons/berdysh,
+	scale = 1,
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 0.0000 90.0000,
+	}
+   }
+
+	model SportSpear
+  {
+	mesh = weapons/sportspear,
+	texture = weapons/sportspear,
+	scale = 1,
+	attachment world
+	{
+	offset = 0.0000 0.0000 0.0000,
+	rotate = 90.0000 0.0000 90.0000,
+	}
+   }
+
+}

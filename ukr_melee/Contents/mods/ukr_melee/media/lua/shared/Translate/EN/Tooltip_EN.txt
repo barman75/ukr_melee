@@ -1,0 +1,4 @@
+Tooltip_EN = {
+Tooltip_ContainsAlcohol = "Contains alcohol!",
+Tooltip_EnergyDrink = "Energy Drink!",
+}
