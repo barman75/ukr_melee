@@ -6,36 +6,29 @@ local i, j, d
 
 --- 
 local myDistTable = {
-"Antiques", 5,
-"CrateMechanics", 3,
-"CrateTools", 3,
-"CrateCamping", 0.5,
-"CrateRandomJunk", 0.5,
-"CrateInstruments", 1,
-"GarageTools", 3,
-"StoreShelfMechanics", 5,
-"MechanicShelfTools", 1,
-"MechanicShelfMisc", 1,
-"EngineerTools", 0.5,
-"Hiker", 1,
-"Hunter", 2,
-"GigamartTools", 1,
-"PoliceLockers", 5,
-"PoliceDesk", 5,
-"PlumbingSupplies", 1,
-"SurvivalGear", 5,
-"Trapper", 3,
-"FireDeptLockers", 0.5,
-"SecurityLockers", 1,
-"ShelfGeneric", 0.5,
-"FactoryLockers", 3,
-"GymLockers", 0.5,
-"ClosetShelfGeneric", 0.5,
-"WardrobeManClassy", 0.5,
-"MeleeWeapons", 15,
-"Hobbies", 5,
-"PawnShopKnives", 2,
-"ArmyHangarTools", 1,
+  "Antiques", 5,
+  "CrateCamping", 0.1,
+  "CrateRandomJunk", 0.1,
+  "CrateInstruments", 0.1,
+  "GarageTools", 0.2,
+  "StoreShelfMechanics", 0.3,
+  "MechanicShelfTools", 0.1,
+  "MechanicShelfMisc", 0.1,
+  "EngineerTools", 0.2,
+  "Hiker", 1,
+  "Hunter", 2,
+  "PoliceLockers", 5,
+  "PoliceDesk", 0.2,
+  "SurvivalGear", 5,
+  "Trapper", 3,
+  "FireDeptLockers", 0.1,
+  "SecurityLockers", 1,
+  "ShelfGeneric", 0.5,
+  "WardrobeManClassy", 0.5,
+  "MeleeWeapons", 15,
+  "Hobbies", 5,
+  "PawnShopKnives", 2,
+  "ArmyHangarTools", 1,
 }
 
 for i = 1, #myDistTable, 2 do 
@@ -66,14 +59,15 @@ myDistTable = nil
 
 
 -- SPORTS
-local myDistTable = {
-"CrateSports", 3,
-"SportStoragePaddles" 2,
-"SportStorageSticks", 3,
-"GymLockers", 1,
-"MeleeWeapons", 2,
-"Hobbies", 5,
+myDistTable = nil
+myDistTable = {
+  "CrateSports", 0.7,
+  "SportStoragePaddles" 1,
+  "SportStorageSticks", 0.5,
+  "MeleeWeapons", 5,
+  "Hobbies", 5,
 }
+
 for i = 1, #myDistTable, 2 do 
   table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Longpipe")
   table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
@@ -110,8 +104,8 @@ end
 myDistTable = nil
 
 --- Additional Distribution for Sharpening Stone
-local myDistTable = {
-  "ArmyHangarTools", 4,
+myDistTable = nil
+myDistTable = {
   "CabinetFactoryTools", 6, 
   "CarSupplyTools", 3,
   "CrateCamping", 0.5,
@@ -124,20 +118,16 @@ local myDistTable = {
   "EngineerTools", 0.5,
   "ClosetShelfGeneric", 1,
   "Hunter", 10,
-  "GigamartTools", 1,
   "CrateCarpentry", 5,
   "CrateMetalwork", 8,
-  "PlumbingSupplies", 1,
   "SurvivalGear", 10,
   "Trapper", 3,
   "CrateTools", 1,
-  "FireStorageTools", 1,
   "ShelfGeneric", 0.5,
   "FactoryLockers", 3,
   "KitchenRandom", 0.5,
   "ClosetShelfGeneric", 0.5,
   "WardrobeManClassy", 0.5,
-  "MeleeWeapons", 3,
   "MetalShopTools", 10,
   "GarageCarpentry", 5,
   "PawnShopKnives", 2,
@@ -146,10 +136,10 @@ local myDistTable = {
   "ToolStoreMetalwork", 5,
   "ToolStoreCarpentry", 2,
   "ToolStoreTools", 5,
-  }
+}
   
-  for i = 1, #myDistTable, 2 do 
-    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.UMWSharpenStone")
-    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
-  end
-  myDistTable = nil
+for i = 1, #myDistTable, 2 do
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.UMWSharpenStone")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+end
+myDistTable = nil
