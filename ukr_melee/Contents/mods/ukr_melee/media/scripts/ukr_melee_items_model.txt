@@ -229,4 +229,40 @@ module Base
 	}
    }
 
+	model ScytheSpear
+	{
+ 	mesh = weapons/scythespear,
+ 	texture = weapons/scythehandle,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model ScytheKnife
+	{
+ 	mesh = weapons/scytheknife,
+ 	texture = weapons/scythehandle,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model ScytheBlade
+	{
+ 	mesh = weapons/scytheblade,
+ 	texture = weapons/scythehandle,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
 }

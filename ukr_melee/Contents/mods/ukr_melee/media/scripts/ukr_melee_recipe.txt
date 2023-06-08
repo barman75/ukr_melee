@@ -1,15 +1,15 @@
 module Base
 {
     
-        recipe Sharp rebar
-        {
+    recipe Sharp rebar
+    {
 	destroy Armatura,
 	keep Saw,
 	Result:ArmaturaSharp,
-        --NearItem:Anvil,
+    --NearItem:Anvil,
 	Time:200.0,
-        Category:Smithing,
-        Sound:Sawing,
+    Category:Smithing,
+    Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
 	SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
@@ -17,30 +17,76 @@ module Base
         
 	}
 
-        recipe Sharp Long pipe
-        {
+	recipe Sharp Long pipe
+	{
 	destroy Longpipe,
 	keep Saw,
 	Result:LongpipeSharp,
-        --NearItem:Anvil,
+    --NearItem:Anvil,
 	Time:200.0,
-        Category:Smithing,
-        Sound:Sawing,
+    Category:Smithing,
+    Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
 	SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
 
-        recipe Create pipe staff
-        {
+    recipe Create pipe staff
+    {
 	destroy Longpipe,
-        Glue/Woodglue/HCSuperglue,
-        LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+    Glue/Woodglue/HCSuperglue,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
 	Result:LongpipeStaff,
 	Time:200.0,
-        Category:Smithing,
-        Sound:Hammering,
+    Category:Smithing,
+	Sound:Hammering,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Scythe Spear
+    {
+	destroy ScytheBlade,
+	WoodenLance/WoodenStick/HCStakehard/HCStake/HCPaddlewood,
+	keep Saw,
+    Glue/Woodglue/HCSuperglue,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Result:ScytheSpear,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Hammering,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Scythe Knife
+    {
+	destroy ScytheBlade,
+    Glue/Woodglue/HCSuperglue,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine/RippedSheets/DenimStrips,
+	Result:ScytheKnife,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Hammering,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Disassemble Scythe Knife
+    {
+	destroy ScytheKnife,
+    BreadKnife/ButterKnife/HCCombatknife/HuntingKnife/HCKnifeiron/HCJackknife/KitchenKnife/HCSteakknife/HCKnifesteel/FlintKnife/HCKnifestone/Scalpel,
+	Result:ScytheBlade,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Hammering,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
 	SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,

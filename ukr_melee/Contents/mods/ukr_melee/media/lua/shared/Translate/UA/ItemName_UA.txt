@@ -18,4 +18,7 @@ ItemName_UA = {
 	ItemName_ukr_melee.NizhkaStola = "Ніжка стола",
 	ItemName_ukr_melee.Berdysh = "Бердиш",
 	ItemName_ukr_melee.SportSpear = "Спортивний спис",
+	ItemName_ukr_melee.ScytheSpear = "Бойова коса",
+	ItemName_ukr_melee.ScytheKnife = "Ніж з коси",
+	ItemName_ukr_melee.ScytheBlade = "Лезо коси",
 }

@@ -12,13 +12,15 @@
 
 -- random weapon in the stomach
 AttachedWeaponDefinitions.UMWrandomSharpInStomach = {
-	chance = 1, -- chance is total, we'll get the chance of every definition and take one from there
+	chance = 0.5, -- chance is total, we'll get the chance of every definition and take one from there
 	weaponLocation = {"Stomach"}, -- defined in AttachedLocations.lua
 	bloodLocations = {"Torso_Lower","Back"}, -- we add blood & hole on this part
 	addHoles = true, -- if true, you need at least one bloodLocation
 	daySurvived = 20, -- needed day of survival before seeing this one
 	weapons = { -- list of possible weapons, we'll take one randomly from there
     "ukr_melee.Trizub",
+	"ukr_melee.ScytheKnife",
+	"ukr_melee.ScytheSpear",
     "ukr_melee.LongpipeSharp",
     "ukr_melee.ArmaturaSharp",
     "ukr_melee.KossacksKnife",
@@ -28,7 +30,7 @@ AttachedWeaponDefinitions.UMWrandomSharpInStomach = {
 
 -- random Axes in the back
 AttachedWeaponDefinitions.UMWrandAxesInBack = {
-	chance = 1,
+	chance = 0.5,
 	weaponLocation = {"Axe Back"},
 	bloodLocations = {"Back"},
 	addHoles = true,
@@ -41,13 +43,14 @@ AttachedWeaponDefinitions.UMWrandAxesInBack = {
 
 -- random knife in the back
 AttachedWeaponDefinitions.UMWrandKnifeBack = {
-	chance = 1,
+	chance = 0.5,
 	weaponLocation = {"Knife in Back"},
 	bloodLocations = {"Back"},
 	addHoles = true,
 	daySurvived = 20,
 	weapons = {
 		"ukr_melee.ArmaturaSharp",
+		"ukr_melee.ScytheKnife",
         "ukr_melee.KossacksKnife",
         "ukr_melee.Svynokol",
 	},
@@ -55,7 +58,7 @@ AttachedWeaponDefinitions.UMWrandKnifeBack = {
 
 -- random knife in the left leg
 AttachedWeaponDefinitions.UMWknifeLeftLeg = {
-	chance = 1,
+	chance = 0.2,
 	weaponLocation = {"Knife Left Leg"},
 	bloodLocations = {"UpperLeg_L"},
 	addHoles = false,
@@ -69,7 +72,7 @@ AttachedWeaponDefinitions.UMWknifeLeftLeg = {
 
 -- random knife in the right leg
 AttachedWeaponDefinitions.UMWknifeRightLeg = {
-	chance = 1,
+	chance = 0.2,
 	weaponLocation = {"Knife Right Leg"},
 	bloodLocations = {"UpperRight_L"},
 	addHoles = false,
@@ -77,13 +80,14 @@ AttachedWeaponDefinitions.UMWknifeRightLeg = {
 	weapons = {
         "ukr_melee.ArmaturaSharp",
         "ukr_melee.KossacksKnife",
+		"ukr_melee.ScytheKnife",
         "ukr_melee.Svynokol",
 	},
 }
 
 -- random knife in the shoulder
 AttachedWeaponDefinitions.UMWrandShoulder = {
-	chance = 1,
+	chance = 0.2,
 	weaponLocation = {"Knife Shoulder"},
 	bloodLocations = {"UpperArm_L", "Torso_Upper"},
 	addHoles = false,
@@ -91,13 +95,14 @@ AttachedWeaponDefinitions.UMWrandShoulder = {
 	weapons = {
         "ukr_melee.ArmaturaSharp",
         "ukr_melee.KossacksKnife",
+		"ukr_melee.ScytheKnife",
         "ukr_melee.Svynokol",
 	},
 }
 
 -- random Axe in shoulder
 AttachedWeaponDefinitions.UMWrandAxeInShoulder = {
-	chance = 1,
+	chance = 0.2,
 	weaponLocation = {"Knife Shoulder"},
 	bloodLocations = {"UpperArm_L", "Torso_Upper"},
 	addHoles = true,
@@ -110,7 +115,7 @@ AttachedWeaponDefinitions.UMWrandAxeInShoulder = {
 
 -- random knife in the back
 AttachedWeaponDefinitions.UMWrandKnifeInBack = {
-	chance = 1,
+	chance = 0.4,
 	weaponLocation = {"Crowbar Back"},
 	bloodLocations = {"Back"},
 	addHoles = true,
@@ -118,6 +123,7 @@ AttachedWeaponDefinitions.UMWrandKnifeInBack = {
 	weapons = {
 		"ukr_melee.ArmaturaSharp",
         "ukr_melee.KossacksKnife",
+		"ukr_melee.ScytheKnife",
         "ukr_melee.Svynokol",
 	},
 }
@@ -125,7 +131,7 @@ AttachedWeaponDefinitions.UMWrandKnifeInBack = {
 ---------- ATTACHED weapons
 -- Bartka on lumberjack
 AttachedWeaponDefinitions.UMWBartkalumberjack = {
-	chance = 1,
+	chance = 0.2,
 	outfit = {"McCoys"},
 	weaponLocation = {"Belt Left", "Belt Right"},
 	bloodLocations = nil,
@@ -138,7 +144,7 @@ AttachedWeaponDefinitions.UMWBartkalumberjack = {
 
 -- various blunt weapon attached in back
 AttachedWeaponDefinitions.UMWmeleeInBack = {
-	chance = 1,
+	chance = 0.4,
 	outfit = {"Bandit"},
 	weaponLocation = {"Shovel Back"},
 	bloodLocations = nil,
@@ -154,7 +160,7 @@ AttachedWeaponDefinitions.UMWmeleeInBack = {
 
 -- hammer/axe in belt left (so we keep knives for belt right if we got multiple items)
 AttachedWeaponDefinitions.UMWhammerBelt = {
-	chance = 1.5,
+	chance = 0.2,
 	outfit = {"Bandit"},
 	weaponLocation = {"Belt Left"},
 	bloodLocations = nil,
@@ -169,7 +175,7 @@ AttachedWeaponDefinitions.UMWhammerBelt = {
 
 -- knives in belt right
 AttachedWeaponDefinitions.UMWknivesBelt = {
-	chance = 1,
+	chance = 0.2,
 	outfit = {"Bandit"},
 	weaponLocation = {"Belt Right Upside"},
 	bloodLocations = nil,
@@ -177,6 +183,7 @@ AttachedWeaponDefinitions.UMWknivesBelt = {
 	daySurvived = 20,
 	weapons = {
 		"ukr_melee.ArmaturaSharp",
+		"ukr_melee.ScytheKnife",
         "ukr_melee.KossacksKnife",
         "ukr_melee.Svynokol",
 	},
