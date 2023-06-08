@@ -36,7 +36,7 @@ module ukr_melee
         Icon = Bartka,
 	TwoHandWeapon = TRUE,
         MinRange = 0.61,
-        MaxRange = 1,6,
+        MaxRange = 1.6,
         WeaponSprite = Bartka,
         MinAngle = 0.7,
         KnockBackOnNoDeath = TRUE,
