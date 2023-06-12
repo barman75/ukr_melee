@@ -1,7 +1,7 @@
 module Base
 {
-    
-    recipe Sharp rebar
+
+   recipe Sharp rebar
     {
 	destroy Armatura,
 	keep Saw,
@@ -14,7 +14,6 @@ module Base
 	SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
-        
 	}
 
 	recipe Sharp Long pipe
@@ -51,15 +50,16 @@ module Base
     {
 	destroy ScytheBlade,
 	WoodenLance/WoodenStick/HCStakehard/HCStake/HCPaddlewood,
-	keep Saw,
+	keep [Recipe.GetItemTypes.Saw],
     Glue/Woodglue/HCSuperglue,
     LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
 	Result:ScytheSpear,
 	Time:200.0,
     Category:Carpentry,
-	Sound:Hammering,
+	Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	SkillRequired:Blacksmith=1,
+    SkillRequired:Woodwork=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -67,7 +67,7 @@ module Base
     recipe Create Scythe Knife
     {
 	destroy ScytheBlade,
-    Glue/Woodglue/HCSuperglue,
+    Glue/HCSuperglue/HCRubbercement/HCTar/HCHotgluegunfull/HCGluejar/Woodglue/HCWoodgluejar,
     LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine/RippedSheets/DenimStrips,
 	Result:ScytheKnife,
 	Time:200.0,
@@ -86,11 +86,111 @@ module Base
 	Result:ScytheBlade,
 	Time:200.0,
     Category:Carpentry,
-	Sound:Hammering,
+    Sound:Dismantle,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
 	SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
 
+    recipe Create Metal Scythe Spear
+    {
+	destroy ScytheBlade,
+	MetalPipe/HCSteelpipe/Longpipe,
+	keep [Recipe.GetItemTypes.Saw],
+    Glue/Woodglue/HCSuperglue,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Result:ScytheSpearMetal,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Hammering,
+	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
+	SkillRequired:Blacksmith=2,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Dovbnya
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	keep [Recipe.GetItemTypes.Hammer],
+	WoodenStick/TreeBranch/HCWillowbranch,
+	Log/HCOakLog,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Result:Dovbnya,
+	Time:400.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=2,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Dovbeshka
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	TreeBranch/HCWillowbranch,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Glue/Woodglue/HCSuperglue,
+	Result:Dovbeshka,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=3,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Druchok
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	TreeBranch/HCWillowbranch,
+	Result:Druchok,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Upgrade Druchok
+    {
+	destroy Druchok,		
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],	
+	LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Glue/Woodglue/HCSuperglue,
+	Result:Dovbeshka,
+	Time:200.0,
+    Category:Carpentry,
+    Sound:Dismantle,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=3,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+    recipe Create Rogach
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	TreeBranch/HCWillowbranch,
+	Result:Rogach,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+
+
 }
+

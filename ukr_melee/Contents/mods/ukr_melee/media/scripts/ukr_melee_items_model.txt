@@ -15,7 +15,6 @@ module Base
 	  scale = 4,
   }
 
-
 	model Bartka
   {
 	mesh = weapons/bartka,
@@ -240,6 +239,18 @@ module Base
  	rotate = 90.0000 0.0000 90.0000,
  	}
     }
+	
+	model ScytheSpearMetal
+	{
+ 	mesh = weapons/scythespear,
+ 	texture = weapons/scythemetalhandle,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
 
 	model ScytheKnife
 	{
@@ -264,5 +275,115 @@ module Base
  	rotate = 90.0000 0.0000 90.0000,
  	}
     }
+
+	model Dovbnya
+	{
+ 	mesh = weapons/dovbnya,
+ 	texture = weapons/dovbnya,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Dovbeshka
+	{
+ 	mesh = weapons/dovbeshka,
+ 	texture = weapons/dovbeshka,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Druchok
+	{
+ 	mesh = weapons/dovbeshka,
+ 	texture = weapons/druchok,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Dryn
+	{
+ 	mesh = weapons/dryn,
+ 	texture = weapons/dovbeshka,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Rogach
+	{
+ 	mesh = weapons/rogach,
+ 	texture = weapons/dovbeshka,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Juco800
+	{
+ 	mesh = weapons/juco800,
+ 	texture = weapons/juco800,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Juco1800
+	{
+ 	mesh = weapons/juco1800,
+ 	texture = weapons/juco800,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model JucoCarpatian
+	{
+ 	mesh = weapons/jucocarpatian,
+ 	texture = weapons/juco800,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+	model Sickle
+	{
+ 	mesh = weapons/sickle,
+ 	texture = weapons/sickle,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 90.0000 0.0000 90.0000,
+ 	}
+    }
+
+
 
 }

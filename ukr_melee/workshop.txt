@@ -1,7 +1,9 @@
 version=1
 id=2849968335
 title=Ukrainian Melee Weapons
-description=Ukrainian Melee Weapons
+description=[h1]Ukrainian Melee Weapons - WIP[/h1] 
+description=
+description=[b]Work continues! Please note that item/weapon specifications may change during development.[/b]
 description=
 description=1. Bartka (Shepherd's axe)
 description=2. Kelep (Battle hammer)
@@ -16,12 +18,26 @@ description=10. Rebar
 description=11. Sharpened rebar
 description=12. Long pipe staff
 description=13. Butcher's knife
-description=14. Battle Scythe
-description=15. Scythe Knife
+description=14. Bardiche (Pole axe)
+description=15. Javelin
+description=16. Battle Scythe
+description=17. Scythe Knife
+description=18. Dovbnya (Wooden sledgehammer)
+description=19. Druchok (Wooden stick)
+description=20. Reinforced Druchok (Wooden stick)
+description=21. Rogach
+description=22. Dryn
+description=23. Juco 800g Axe
+description=24. Juco 1800g Axe
+description=25. Juco Carpatian Axe
+description=26. Ukrainan Sickle
+
+description=
 description=
 description=to be continued...
-description=
 description=Workshop ID: 2849968335
 description=Mod ID: ukr_melee
 tags=Build 41;Items;Weapons
 visibility=public
+
+

@@ -26,10 +26,13 @@ local myDistTable = {
 "SecurityLockers", 1,
 "ShelfGeneric", 0.2,
 "WardrobeManClassy", 0.03,
-"MeleeWeapons", 5,
+"MeleeWeapons", 10,
 "Hobbies", 1,
 "PawnShopKnives", 1.5,
 "ArmyHangarTools", 1,
+"DrugShackWeapons", 1,
+"PawnShopKnives", 1,
+"SurvivalGear", 1,
 }
 
 for i = 1, #myDistTable, 2 do
@@ -61,39 +64,42 @@ end
 myDistTable = nil
 
 
--- STONE and BLADE distribution for ProceduralDistributions.lua
+-- STONE and SCYTHE BLADE distribution for ProceduralDistributions.lua
 myDistTable = nil
 local myDistTable = {
-  "CabinetFactoryTools", 3, 
-  "CarSupplyTools", 2,
-  "CrateCamping", 0.5,
-  "CrateRandomJunk", 0.01,
-  "CrateInstruments", 0.5,
-  "GarageTools", 0.2,
-  "StoreShelfMechanics", 2,
-  "MechanicShelfTools", 5,
-  "MechanicShelfMisc", 1,
-  "EngineerTools", 0.5,
-  "ClosetShelfGeneric", 1,
-  "Hunter", 2,
-  "CrateCarpentry", 3,
-  "CrateMetalwork", 3,
-  "SurvivalGear", 2,
-  "Trapper", 2,
+  "ClosetShelfGeneric", 0.01,
+  "WardrobeManClassy", 0.001,
+  "CrateRandomJunk", 0.001,
+  "ShelfGeneric", 0.01,
+  "KitchenRandom", 0.01,
   "CrateTools", 1,
-  "ShelfGeneric", 0.5,
+  "ToolStoreMisc", 1,
+  "GigamartTools", 1,
+  "ToolStoreTools", 1,
+  "CrateInstruments", 1,
+  "PawnShopKnives", 0.1,
   "FactoryLockers", 3,
-  "KitchenRandom", 0.1,
-  "ClosetShelfGeneric", 0.1,
-  "WardrobeManClassy", 0.01,
-  "MetalShopTools", 10,
-  "GarageCarpentry", 1,
-  "PawnShopKnives", 2,
-  "JanitorTools", 2,
-  "GarageMetalwork", 5,
-  "ToolStoreMetalwork", 5,
+  "GarageCarpentry", 2,
   "ToolStoreCarpentry", 2,
-  "ToolStoreTools", 5,
+  "MetalShopTools", 10,
+  "ToolStoreMetalwork", 5,
+  "CrateMetalwork", 1,
+  "CrateCarpentry", 3,
+  "CabinetFactoryTools", 5,
+  "EngineerTools", 1,
+  "CarSupplyTools", 3,
+  "GarageTools", 5,
+  "GarageMetalwork", 5,
+  "MechanicShelfTools", 4,
+  "CrateTools", 3,
+  "ToolStoreMisc", 3,
+  "GigamartTools", 2,
+  "ToolStoreTools", 3,
+  "ButcherTools", 3,
+  "JanitorTools", 1,
+  "SurvivalGear", 2,
+  "Trapper", 0.01,
+  "ArmySurplusTools", 1,
   }
   for i = 1, #myDistTable, 2 do
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.UMWSharpenStone")
@@ -102,6 +108,75 @@ local myDistTable = {
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
   end
   myDistTable = nil
+
+
+-- FARMING TOOLS distribution for ProceduralDistributions.lua
+myDistTable = nil
+local myDistTable = {
+  "CrateFarming", 5,
+  "GardenStoreTools", 5,
+  "GigamartFarming", 5,
+  "Homesteading", 5,
+  "ToolStoreFarming", 5,
+  "GardenStoreTools", 5,
+  "ToolStoreMisc", 2,
+  "GigamartTools", 2,
+  "CrateRandomJunk", 0.1,
+  "CrateTools", 0.1,
+  "ToolStoreMisc", 0.1,
+  "ToolStoreTools", 0.1,
+  "CrateInstruments", 0.01,
+    }
+  for i = 1, #myDistTable, 2 do
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.UMWSharpenStone")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.ScytheBlade")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Sickle")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+  myDistTable = nil
+
+
+
+  -- AXE TOOLS distribution for ProceduralDistributions.lua
+myDistTable = nil
+local myDistTable = {
+  "ToolStoreCarpentry", 1,
+  "GarageCarpentry", 1,
+  "LoggingFactoryTools", 1,
+  "CrateCarpentry", 1,
+  "CrateTools", 1,
+  "ToolStoreMisc", 1,
+  "GigamartTools", 1,
+  "ToolStoreTools", 1,
+  "CrateRandomJunk", 1,
+  "CrateFarming",1,
+  "GardenStoreTools", 1,
+  "GigamartFarming", 1,
+  "Homesteading", 1,
+  "ToolStoreFarming", 1,
+  "GardenStoreTools", 1,
+  "CrateTools", 1,
+  "CrateRandomJunk", 0.1,
+  "ShelfGeneric", 0.01,
+  "CrateTools", 0.01,
+  "ToolStoreMisc", 0.1,
+  "ToolStoreTools", 1,
+  "CrateInstruments", 0.01,
+    }
+  for i = 1, #myDistTable, 2 do
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.UMWSharpenStone")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.JucoCarpatian")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Juco1800")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Juco800")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+  myDistTable = nil
+
 
 
 -- VEHICLE Distributions for VehicleDistributions.lua. May be broken in next updates due devs going to ProceduralDistributions
