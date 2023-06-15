@@ -32,4 +32,5 @@ ItemName_UA = {
 	ItemName_ukr_melee.Juco1800 = "Сокира Juko 1.8 кг",
 	ItemName_ukr_melee.JucoCarpatian = "Сокира Juko Карпатська",
 	ItemName_ukr_melee.Sickle = "Український серп",
+	ItemName_ukr_melee.Motyka = "Сапа-мотика",
 }

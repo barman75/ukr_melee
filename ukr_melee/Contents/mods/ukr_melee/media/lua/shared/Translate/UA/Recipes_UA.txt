@@ -33,5 +33,6 @@ Recipe_UA = {
 	Fix Juco1800 = "Полагодити Juco 1.8 кг",
 	Fix JucoCarpatian = "Полагодити Juco Карпатська",
 	Fix Sickle = "Полагодити Серп",
+	Fix Motyka = "Полагодити Сапу-мотику",
 }
 

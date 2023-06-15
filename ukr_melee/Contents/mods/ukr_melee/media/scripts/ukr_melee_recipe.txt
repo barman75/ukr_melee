@@ -58,7 +58,6 @@ module Base
     Category:Carpentry,
 	Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=1,
     SkillRequired:Woodwork=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
@@ -105,7 +104,7 @@ module Base
     Category:Carpentry,
 	Sound:Hammering,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=2,
+    SkillRequired:Mechanics=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -190,6 +189,18 @@ module Base
 	CanBeDoneFromFloor: true,
 	}
 
+    recipe Create Dryn
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	TreeBranch/HCWillowbranch,
+	Result:Dryn,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
 
 
 }

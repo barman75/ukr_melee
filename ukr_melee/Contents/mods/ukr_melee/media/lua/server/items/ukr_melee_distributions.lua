@@ -134,6 +134,8 @@ local myDistTable = {
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Sickle")
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.Motyka")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
   end
   myDistTable = nil
 

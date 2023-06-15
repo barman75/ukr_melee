@@ -384,6 +384,18 @@ module Base
  	}
     }
 
+	model Motyka
+	{
+ 	mesh = weapons/motyka,
+ 	texture = weapons/motyka,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 0.0000 0.0000 0.0000,
+ 	}
+    }	
+
 
 
 }
