@@ -41,7 +41,7 @@ module Base
     Category:Smithing,
 	Sound:Hammering,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	SkillRequired:Mechanics=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -58,7 +58,7 @@ module Base
     Category:Carpentry,
 	Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-    SkillRequired:Woodwork=1,
+    SkillRequired:Woodwork=3,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -122,7 +122,7 @@ module Base
     Category:Carpentry,
 	Sound:Sawing,
     OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=2,
+    SkillRequired:Woodwork=4,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -154,7 +154,7 @@ module Base
     Category:Carpentry,
 	Sound:Sawing,
     OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=0,
+    SkillRequired:Woodwork=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -183,6 +183,7 @@ module Base
 	Result:Rogach,
 	Time:100.0,
     Category:Carpentry,
+	SkillRequired:Woodwork=1,
 	Sound:Sawing,
     OnGiveXP:Recipe.OnGiveXP.WoodWork5,
 	NeedToBeLearn: false,
@@ -198,6 +199,7 @@ module Base
     Category:Carpentry,
 	Sound:Sawing,
     OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	SkillRequired:Woodwork=1,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
