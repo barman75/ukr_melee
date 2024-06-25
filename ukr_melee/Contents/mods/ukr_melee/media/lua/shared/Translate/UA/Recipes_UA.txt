@@ -35,5 +35,8 @@ Recipe_UA = {
 	Fix JucoCarpatian = "Полагодити Juco Карпатська",
 	Fix Sickle = "Полагодити Серп",
 	Fix Motyka = "Полагодити Сапу-мотику",
+	Create Kiyanka = "Зробити Киянку",
+	Create Palytsya = "Вирізати Палицю",
+
 }
 

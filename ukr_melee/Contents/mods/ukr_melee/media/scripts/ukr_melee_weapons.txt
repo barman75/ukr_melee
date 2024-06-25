@@ -2,7 +2,6 @@ module ukr_melee
 {
     item UMWSharpenStone
     {
-        --DisplayCategory = Tool,
         DisplayCategory = Material,
 	Type = Normal,
         DisplayName = Sharpening stone,
@@ -12,9 +11,8 @@ module ukr_melee
         SurvivalGear = TRUE,
 	Type = Drainable,
         UseDelta = 0.1,
-	-- UseWhileEquipped = FALSE,
+	UseWhileEquipped = FALSE,
     }
-
         item ScytheBlade
     {
         DisplayCategory = Material,
@@ -24,9 +22,49 @@ module ukr_melee
         Icon = ScytheBlade,
         Weight = 0.4,
         WorldStaticModel = ScytheBlade_ground,
-        --SurvivalGear = TRUE,
+        SurvivalGear = TRUE,
 	UseWhileEquipped = FALSE,
     }
+
+/*------------- MAGAZINES ------------*/
+        item ukr_melee_mag1
+    {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Ukranian Melee Weapons Vol.1,
+        Icon = MagazineFish2,
+        TeachedRecipes = Create Druchok;Upgrade Druchok;Create Dovbeshka,
+        ReplaceOnUse = ukr_melee_mag1,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFish2Ground,
+    }
+        item ukr_melee_mag2
+    {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Ukranian Melee Weapons Vol.2,
+        Icon = MagazineFish2,
+        TeachedRecipes = Create Dovbnya;Create Scythe Spear;Disassemble Scythe Knife,
+        ReplaceOnUse = ukr_melee_mag2,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFish2Ground,
+    }
+        item ukr_melee_mag3
+    {
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Ukranian Melee Weapons Vol.3,
+        Icon = MagazineFish2,
+        TeachedRecipes = Create pipe staff;Create Metal Scythe Spear,
+        ReplaceOnUse = ukr_melee_mag2,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFish2Ground,
+    }
+
+/*--------------- WEAPONS -----------*/
 
    item Bartka
     {
@@ -79,7 +117,7 @@ module ukr_melee
         AlwaysKnockdown = FALSE,
      }
         fixing Fix Bartka
-	{
+        {
         Require: Bartka,
 	Fixer: DuctTape=2,
         Fixer: UMWSharpenStone=2,
@@ -88,7 +126,6 @@ module ukr_melee
         Fixer: Woodglue=2; Woodwork=2,
 	Fixer: ScrapMetal=3;MetalWelding=3,
         }
-
 
     item Kelep
     {
@@ -260,7 +297,6 @@ module ukr_melee
         Require: Pirnach,
         Fixer: ScrapMetal=4;MetalWelding=3,
         }
-
 
 item Shablya
     {
@@ -503,7 +539,6 @@ item LongpipeSharp
         Require: LongpipeSharp,
 	Fixer: ScrapMetal=3;MetalWelding=3,
         }
-
 
     item Armatura
     {
@@ -1214,8 +1249,8 @@ item Druchok
 	HitSound = BaseballBatHit,
 	HitFloorSound = BaseballBatHit,
 	SwingSound = BaseballBatSwing,
-	CriticalChance = 20,
-	critDmgMultiplier = 2,
+	CriticalChance = 15,
+	critDmgMultiplier = 1.5,
 	MinDamage = 0.5,
 	MaxDamage = 0.9,
         TreeDamage = 0,        
@@ -1229,7 +1264,7 @@ item Druchok
 item Dovbeshka
 	{
         DisplayCategory = ToolWeapon,
-        MaxRange = 1.5,
+        MaxRange = 1.8,
         WeaponSprite = Dovbeshka,
         MinAngle = 0.2,
         Type = Weapon,
@@ -1237,12 +1272,12 @@ item Dovbeshka
         KnockBackOnNoDeath = TRUE,
         SwingAmountBeforeImpact	= 0.02,
         Categories = Improvised;Blunt,
-        ConditionLowerChanceOneIn = 40,
-        Weight = 1.5,
+        ConditionLowerChanceOneIn = 35,
+        Weight = 1.8,
         SplatNumber = 0,
         PushBackMod = 0.7,
         SubCategory = Swinging,
-	ConditionMax =	7,
+	ConditionMax =	6,
 	MaxHitCount = 3,
 	DoorDamage = 1,
 	IdleAnim = Idle_Weapon2,
@@ -1264,7 +1299,7 @@ item Dovbeshka
 	CriticalChance = 30,
 	critDmgMultiplier = 2,
 	MinDamage = 0.8,
-	MaxDamage = 1.6,
+	MaxDamage = 1.4,
         TreeDamage = 0,
 	BaseSpeed = 1.8,
 	WeaponLength = 1.5,
@@ -1294,7 +1329,7 @@ item Rogach
 	SplatBloodOnNoDeath = FALSE,
         PushBackMod = 0.5,
         ConditionMax = 3,
-        MaxHitCount = 3,
+        MaxHitCount = 2,
         DoorDamage = 0,
         SwingAnim = Spear,
         SwingTime = 2,
@@ -1303,7 +1338,7 @@ item Rogach
 	IdleAnim = Idle_Weapon2,
 	KnockdownMod = 0,
         TreeDamage = 0,
-        CriticalChance = 20,
+        CriticalChance = 15,
         CritDmgMultiplier = 2,
         MinDamage = 0.4,
         MaxDamage = 0.6,
@@ -1323,7 +1358,6 @@ item Rogach
 	-- EnduranceMod = 0.5,
 	HitAngleMod = -30,
     }
-
 
 item Dryn
     {
@@ -1425,7 +1459,6 @@ item Dryn
         Fixer : Glue=2,
         Fixer : Scotchtape=2,
         }
-
 
     item Juco1800
 	{
@@ -1645,5 +1678,97 @@ item Dryn
        Fixer : Glue=2,
        Fixer : Scotchtape=2,
 	}
+
+        item Kiyanka
+	{
+                DisplayCategory = ToolWeapon,
+		MaxRange = 1.1,
+		WeaponSprite = Kiyanka,
+		MinAngle = 0.67,
+		Type = Weapon,
+		MinimumSwingTime = 3,
+		KnockBackOnNoDeath = TRUE,
+		SwingAmountBeforeImpact = 0.02,
+		Categories = SmallBlunt,
+		ConditionLowerChanceOneIn = 20,
+		Weight = 0.8,
+		SplatNumber = 1,
+		PushBackMod = 0.5,
+		SubCategory = Swinging,
+		ConditionMax = 4,
+		MaxHitCount = 1,
+		DoorDamage = 1,
+		CanBarricade = TRUE,
+		SwingAnim = Bat,
+		DisplayName = Kiyanka,
+		MinRange = 0.61,
+		SwingTime = 3,
+		KnockdownMod = 1,
+		SplatBloodOnNoDeath = TRUE,
+		Icon = kiyanka,
+		RunAnim = Run_Weapon2,
+                IdleAnim = Idle_Weapon2,
+                BreakSound = BreakWoodItem,
+                DoorHitSound = BaseballBatHit,
+	        HitSound = BaseballBatHit,
+	        HitFloorSound = BaseballBatHit,
+	        SwingSound = BaseballBatSwing,
+                TreeDamage = 0,
+                MetalValue = 0,
+                CriticalChance = 10,
+                CritDmgMultiplier = 2,
+                MinDamage = 0.3,
+                MaxDamage = 0.6,
+                BaseSpeed = 1,
+		WeaponLength = 0.23,
+		AttachmentType = Hammer,
+                Tags = Hammer;RemoveBarricade,
+      }
+    item Palytsya
+	{
+                DisplayCategory = Sports,
+                MaxRange = 1.25,
+		WeaponSprite = Palytsya,
+		MinAngle = 0.75,
+		Type = Weapon,
+		MinimumSwingTime = 1,
+		KnockBackOnNoDeath = TRUE,
+		SwingAmountBeforeImpact = 0.002,
+		Categories = Blunt,
+		ConditionLowerChanceOneIn = 10,
+		Weight = 1.5,
+		SplatNumber = 2,
+		PushBackMod = 0.5,
+		SubCategory = Swinging,
+		ConditionMax = 6,
+		MaxHitCount = 2,
+		DoorDamage = 10,
+		IdleAnim = Idle_Weapon2,
+		SwingAnim = Bat,
+		DisplayName = Palytsya,
+		MinRange = 0.61,
+		SwingTime = 1.5,
+		HitAngleMod = -30,
+		KnockdownMod = 2,
+		SplatBloodOnNoDeath = FALSE,
+		Icon = palytsya,
+		RunAnim	= Run_Weapon2,
+                TwoHandWeapon = TRUE,
+                BreakSound  =   BaseballBatBreak,
+                DoorHitSound = BaseballBatHit,
+		HitSound = BaseballBatHit,
+		HitFloorSound = BaseballBatHit,
+		SwingSound = BaseballBatSwing,
+                TreeDamage = 1,
+		CriticalChance = 30,
+		critDmgMultiplier = 2,
+		MinDamage = 0.8,
+		MaxDamage = 1.1,
+		BaseSpeed = 2,
+		WeaponLength = 0.5,
+		AttachmentType = Shovel,
+	}
+
+
 
 }

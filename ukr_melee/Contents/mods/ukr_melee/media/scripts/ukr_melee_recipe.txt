@@ -1,6 +1,128 @@
 module Base
 {
 
+/*--------- SIMPLE ---------*/
+
+    	recipe Create Palytsya
+    {
+	keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+	TreeBranch/HCWillowbranch,
+	Result:Palytsya,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+		recipe Create Rogach
+    {
+	keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+	TreeBranch/HCWillowbranch,
+	Result:Rogach,
+	Time:100.0,
+    Category:Carpentry,
+	//SkillRequired:Woodwork=1,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+    	recipe Create Dryn
+    {
+	keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+	TreeBranch/HCWillowbranch,
+	Result:Dryn,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	//SkillRequired:Woodwork=1,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+	    recipe Create Kiyanka
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	TreeBranch/HCWillowbranch,
+	Log/HCOakLog,
+	Result:Kiyanka,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	SkillRequired:Woodwork=1,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+/*------- SKILLED ------*/
+    recipe Create Dovbnya
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	keep [Recipe.GetItemTypes.Hammer],
+	WoodenStick/TreeBranch/HCWillowbranch,
+	Log/HCOakLog,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Result:Dovbnya,
+	Time:400.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=3,
+	NeedToBeLearn: true,
+	CanBeDoneFromFloor: true,
+	}
+    recipe Create Druchok
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	TreeBranch/HCWillowbranch,
+	Result:Druchok,
+	Time:100.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=2,
+	NeedToBeLearn: true,
+	CanBeDoneFromFloor: true,
+	}
+    recipe Create Dovbeshka
+    {
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	TreeBranch/HCWillowbranch,
+    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Glue/Woodglue/HCSuperglue,
+	Result:Dovbeshka,
+	Time:200.0,
+    Category:Carpentry,
+	Sound:Sawing,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=3,
+	NeedToBeLearn: true,
+	CanBeDoneFromFloor: true,
+	}
+    recipe Upgrade Druchok
+    {
+	destroy Druchok,		
+	keep [Recipe.GetItemTypes.SharpKnife],
+	keep [Recipe.GetItemTypes.Saw],
+	LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
+	Glue/Woodglue/HCSuperglue,
+	Result:Dovbeshka,
+	Time:200.0,
+    Category:Carpentry,
+    Sound:Dismantle,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    SkillRequired:Woodwork=3,
+	NeedToBeLearn: true,
+	CanBeDoneFromFloor: true,
+	}
+
+/*------------ METALWORK ----------*/
    recipe Sharp rebar
     {
 	destroy Armatura,
@@ -11,11 +133,10 @@ module Base
     Category:Smithing,
     Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	//SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
-
 	recipe Sharp Long pipe
 	{
 	destroy Longpipe,
@@ -26,7 +147,7 @@ module Base
     Category:Smithing,
     Sound:Sawing,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	//SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -73,7 +194,7 @@ module Base
     Category:Carpentry,
 	Sound:Hammering,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	//SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -87,7 +208,7 @@ module Base
     Category:Carpentry,
     Sound:Dismantle,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
-	SkillRequired:Blacksmith=0,
+	//SkillRequired:Blacksmith=0,
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
 	}
@@ -105,105 +226,9 @@ module Base
 	Sound:Hammering,
 	OnGiveXP:Recipe.OnGiveXP.Blacksmith10,
     SkillRequired:Mechanics=1,
-	NeedToBeLearn: false,
+	NeedToBeLearn: true,
 	CanBeDoneFromFloor: true,
 	}
-
-    recipe Create Dovbnya
-    {
-	keep [Recipe.GetItemTypes.SharpKnife],
-	keep [Recipe.GetItemTypes.Saw],
-	keep [Recipe.GetItemTypes.Hammer],
-	WoodenStick/TreeBranch/HCWillowbranch,
-	Log/HCOakLog,
-    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
-	Result:Dovbnya,
-	Time:400.0,
-    Category:Carpentry,
-	Sound:Sawing,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=4,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
-    recipe Create Dovbeshka
-    {
-	keep [Recipe.GetItemTypes.SharpKnife],
-	keep [Recipe.GetItemTypes.Saw],
-	TreeBranch/HCWillowbranch,
-    LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
-	Glue/Woodglue/HCSuperglue,
-	Result:Dovbeshka,
-	Time:200.0,
-    Category:Carpentry,
-	Sound:Sawing,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=3,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
-    recipe Create Druchok
-    {
-	keep [Recipe.GetItemTypes.SharpKnife],
-	keep [Recipe.GetItemTypes.Saw],
-	TreeBranch/HCWillowbranch,
-	Result:Druchok,
-	Time:100.0,
-    Category:Carpentry,
-	Sound:Sawing,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=1,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
-    recipe Upgrade Druchok
-    {
-	destroy Druchok,		
-	keep [Recipe.GetItemTypes.SharpKnife],
-	keep [Recipe.GetItemTypes.Saw],	
-	LeatherStrips/HCLeatherstrip/HCLeatherstriphard/HCLeatherstripfine,
-	Glue/Woodglue/HCSuperglue,
-	Result:Dovbeshka,
-	Time:200.0,
-    Category:Carpentry,
-    Sound:Dismantle,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-    SkillRequired:Woodwork=3,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
-    recipe Create Rogach
-    {
-	keep [Recipe.GetItemTypes.SharpKnife],
-	TreeBranch/HCWillowbranch,
-	Result:Rogach,
-	Time:100.0,
-    Category:Carpentry,
-	SkillRequired:Woodwork=1,
-	Sound:Sawing,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
-    recipe Create Dryn
-    {
-	keep [Recipe.GetItemTypes.SharpKnife],
-	TreeBranch/HCWillowbranch,
-	Result:Dryn,
-	Time:100.0,
-    Category:Carpentry,
-	Sound:Sawing,
-    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
-	SkillRequired:Woodwork=1,
-	NeedToBeLearn: false,
-	CanBeDoneFromFloor: true,
-	}
-
 
 }
 

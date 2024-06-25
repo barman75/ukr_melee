@@ -1,4 +1,8 @@
 ItemName_UA = {
+
+	ItemName_ukr_melee.ukr_melee_mag1 = "Холодна зброя ч.1",
+	ItemName_ukr_melee.ukr_melee_mag2 = "Холодна зброя ч.2",
+	ItemName_ukr_melee.ukr_melee_mag3 = "Холодна зброя ч.3",
 	ItemName_ukr_melee.UMWSharpenStone = "Точильний камінь",
 	ItemName_ukr_melee.Bartka = "Бартка",
 	ItemName_ukr_melee.Kelep = "Келеп (Клевець)",
@@ -33,4 +37,7 @@ ItemName_UA = {
 	ItemName_ukr_melee.JucoCarpatian = "Сокира Juko Карпатська",
 	ItemName_ukr_melee.Sickle = "Український серп",
 	ItemName_ukr_melee.Motyka = "Сапа-мотика",
+	ItemName_ukr_melee.Palytsya = "Палиця",
+	ItemName_ukr_melee.Kiyanka = "Киянка",
+	
 }

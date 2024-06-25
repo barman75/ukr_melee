@@ -396,6 +396,28 @@ module Base
  	}
     }	
 
+	model Kiyanka
+	{
+ 	mesh = weapons/kiyanka,
+ 	texture = weapons/woodtexture,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 0.0000 0.0000 0.0000,
+ 	}
+    }	
 
+	model Palytsya
+	{
+ 	mesh = weapons/palytsya,
+ 	texture = weapons/woodtexture,
+ 	scale = 1,
+ 	attachment world
+ 	{
+ 	offset = 0.0000 0.0000 0.0000,
+ 	rotate = 0.0000 0.0000 0.0000,
+ 	}
+    }	
 
 }

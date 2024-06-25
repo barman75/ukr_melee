@@ -5,6 +5,36 @@ require 'Vehicles/VehicleDistributions'
 
 local i, j, d
 
+  -- MAGAZINES distribution for ProceduralDistributions.lua
+  myDistTable = nil
+  local myDistTable = {
+    "BookstoreMisc", 1,
+    "CrateMagazines", 1,
+    "GasStorageMechanics", 1,
+    "LivingRoomShelf", 0.1,
+    "LivingRoomSideTableNoRemote", 0.1,
+    "LivingRoomSideTable", 0.1,
+    "LivingRoomShelfNoTapes", 0.1,
+    "MagazineRackMixed", 1,
+    "MechanicShelfBooks", 1,
+    "ClassroomMisc",1,
+    "ClassroomShelves", 1,
+    "LibraryBooks", 1,
+    "PostOfficeBooks", 0.1,
+    "ShelfGeneric", 1,
+    "ToolStoreBooks", 1,
+      }
+    for i = 1, #myDistTable, 2 do
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.ukr_melee_mag1")
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.ukr_melee_mag2")
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_melee.ukr_melee_mag3")
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    end
+    myDistTable = nil
+  
+
 -- MELEE WEAPONS distribution for ProceduralDistributions.lua
 local myDistTable = {
 "Antiques", 3,
